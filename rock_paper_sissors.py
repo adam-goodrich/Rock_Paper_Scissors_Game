@@ -39,7 +39,7 @@ while go_again == "y":
     else:
         print("\nSorry I don't understand. Please only pick 'Rock', 'Paper', or 'Sissors'.")
 
-
+    print("\nThis game is fun!")
     print(f"\nThe current score is computer {computer_score_count}, you {player_score_count}.")
     go_again = input("\ngo again? ")
     go_again = go_again.lower()
