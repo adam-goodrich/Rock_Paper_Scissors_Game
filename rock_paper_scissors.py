@@ -6,8 +6,8 @@ go_again = "y"
 player_score_count = 0
 computer_score_count = 0
 while go_again == "y":
-    your_choice = input("\nPlease chose either Rock, Paper, or Sissors: ")
-    rock_paper_sissor = random.choice(["Rock", "Paper", "Sissors"])
+    your_choice = input("\nPlease chose either Rock, Paper, or Scissors: ")
+    rock_paper_sissor = random.choice(["Rock", "Paper", "Scissors"])
     
     print(f"\nYou picked {your_choice}.")
     print(f"\nThe Computer picked {rock_paper_sissor}.")
@@ -21,23 +21,23 @@ while go_again == "y":
     elif your_choice == "rock" and rock_paper_sissor == "paper":
         print("\nYou lose!")
         computer_score_count += 1
-    elif your_choice == "rock" and rock_paper_sissor == "sissors":
+    elif your_choice == "rock" and rock_paper_sissor == "scissors":
         print("\nYou win!")
         player_score_count += 1
-    elif your_choice == "paper" and rock_paper_sissor == "sissors":
+    elif your_choice == "paper" and rock_paper_sissor == "scissors":
         print("\nYou lose!")
         computer_score_count += 1
     elif your_choice == "paper" and rock_paper_sissor == "rock":
         print("\nYou win!")
         player_score_count += 1
-    elif your_choice == "sissors" and rock_paper_sissor == "rock":
+    elif your_choice == "scissors" and rock_paper_sissor == "rock":
         print("\nYou lose!")
         computer_score_count += 1
-    elif your_choice == "sissors" and rock_paper_sissor == "paper":
+    elif your_choice == "scissors" and rock_paper_sissor == "paper":
         print("\nYou win!")
         player_score_count += 1
     else:
-        print("\nSorry I don't understand. Please only pick 'Rock', 'Paper', or 'Sissors'.")
+        print("\nSorry I don't understand. Please only pick 'Rock', 'Paper', or 'Scissors'.")
 
     print("\nThis game is fun!")
     print(f"\nThe current score is computer {computer_score_count}, you {player_score_count}.")
