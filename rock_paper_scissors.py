@@ -5,7 +5,7 @@ go_again = "y"
 
 player_score_count = 0
 computer_score_count = 0
-while go_again == "y":
+while go_again == "y" or go_again == "yes":
     your_choice = input("\nPlease chose either Rock, Paper, or Scissors: ")
     rock_paper_sissor = random.choice(["Rock", "Paper", "Scissors"])
     
